@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find the star</title>
+</head>
+<body>
+<script>
+  let arr1 = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+  let arr2 = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+  let star = prompt('Enter the star name: ');
+  function findstar () {
+      for (let i = 0; i < arr1.length; i++) {
+          if (star === arr1[i]) {
+              alert(arr2[i])
+          } else {
+              alert("Couldn't find the star you are looking for!")
+          }
+      }
+  }
+  findstar();
+</script>
+</body>
+</html>
